@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <title>Skrivro</title>
+    <script>
+      if (location.pathname.startsWith("/penna")) {
+        location.replace(location.pathname.replace(/^\/penna/, "/skrivro") + location.search + location.hash);
+      }
+    </script>
+  </head>
+  <body>
+    <p>Sidan finns inte. <a href="/skrivro/">Till Skrivro</a></p>
+  </body>
+</html>
